@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import HeaderLogo from "../assets/HeaderLogo";
+import LeftArrowIcon from "../assets/LeftArrowIcon";
 
 function Header() {
   return (
@@ -9,17 +10,20 @@ function Header() {
         <HeaderLogo />
       </HeaderTitle>
       <HeaderBtnBox>
-        <HeaderBtn>
-          <Link to={"/"}>시연회 소개</Link>
-        </HeaderBtn>
-        <HeaderBtn>
-          <Link to={"/clubs"}>동아리 목록</Link>
-        </HeaderBtn>
-        <HeaderBtn>
-          <Link to={"/faq"}>FAQ</Link>
-        </HeaderBtn>
+        <Link to={"/"}>
+          <HeaderBtn>시연회 소개</HeaderBtn>
+        </Link>
+        <Link to={"/clubs"}>
+          <HeaderBtn>동아리 목록</HeaderBtn>
+        </Link>
+        <Link to={"/faq"}>
+          <HeaderBtn>FAQ</HeaderBtn>
+        </Link>
       </HeaderBtnBox>
-      <HeaderLinkBtn>지원 폼 작성하기</HeaderLinkBtn>
+      <HeaderLinkBtn>
+        지원 폼 작성하기
+        <LeftArrowIcon />
+      </HeaderLinkBtn>
     </HeaderContainer>
   );
 }
@@ -31,13 +35,29 @@ const HeaderContainer = styled.header`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 5px 0;
+  padding: 30px 0;
 `;
 
 const HeaderTitle = styled.h1``;
 
 const HeaderBtnBox = styled.div``;
 
-const HeaderBtn = styled.button``;
+const HeaderBtn = styled.button`
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+`;
 
-const HeaderLinkBtn = styled.button``;
+const HeaderLinkBtn = styled.button`
+  background: #000;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  cursor: pointer;
+`;
