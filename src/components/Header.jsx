@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import HeaderLogo from "../assets/HeaderLogo";
+import Logo from "../assets/Logo";
 import LeftArrowIcon from "../assets/LeftArrowIcon";
 
 function Header() {
   return (
     <HeaderContainer>
       <HeaderTitle>
-        <HeaderLogo />
+        <Logo />
       </HeaderTitle>
       <HeaderBtnBox>
         <Link to={"/"}>

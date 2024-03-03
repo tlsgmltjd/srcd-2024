@@ -1,4 +1,4 @@
-function HeaderLogo() {
+function Logo() {
   return (
     <svg
       width="131"
@@ -15,4 +15,4 @@ function HeaderLogo() {
   );
 }
 
-export default HeaderLogo;
+export default Logo;
