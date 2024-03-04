@@ -22,8 +22,12 @@ function Footer() {
       </FooterInfoBox>
       <FooterSnsBox>
         시연회
-        <InstarIcon />
-        <FacebockIcon />
+        <FooterSnsBtn href="https://www.google.com">
+          <InstarIcon />
+        </FooterSnsBtn>
+        <FooterSnsBtn href="https://www.google.com">
+          <FacebockIcon />
+        </FooterSnsBtn>
       </FooterSnsBox>
     </FooterContainer>
   );
@@ -31,12 +35,39 @@ function Footer() {
 
 export default Footer;
 
-const FooterContainer = styled.footer``;
+const FooterContainer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+`;
 
-const FooterInfoBox = styled.div``;
+const FooterInfoBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+`;
 
-const FooterInfoContentBox = styled.p``;
+const FooterInfoContentBox = styled.p`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+`;
 
-const FooterInfoContent = styled.p``;
+const FooterInfoContent = styled.p`
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+`;
 
-const FooterSnsBox = styled.div``;
+const FooterSnsBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
+`;
+
+const FooterSnsBtn = styled.a`
+  cursor: pointer;
+`;
