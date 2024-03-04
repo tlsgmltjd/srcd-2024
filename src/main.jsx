@@ -65,7 +65,7 @@ table {
   border-spacing: 0;
 }
 body {  
-  background: #f8f9fb;
+  background-color: white;
   font-weight: 700;
   overscroll-behavior-y: none;
 }
