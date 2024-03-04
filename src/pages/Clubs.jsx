@@ -12,8 +12,13 @@ import Januri from "../assets/clubs/Januri.png";
 function Clubs() {
   return (
     <Container>
+      <ClubContainerTitleBox>
+        <ClubContainerTitle>동아리 목록</ClubContainerTitle>
+      </ClubContainerTitleBox>
       <ClubContainer>
-        <ClubTitleBox></ClubTitleBox>
+        <ClubTitleBox>
+          <ClubTitle>시연회에 함께한 동아리들을 알아보세요!</ClubTitle>
+        </ClubTitleBox>
         <ClubBox>
           <ClubLogoBox>
             <img src={Vfriends} />
@@ -140,10 +145,11 @@ function Clubs() {
 
 export default Clubs;
 
-const Container = styled.div``;
+const Container = styled.div`
+  padding: 60px 200px 100px 200px;
+`;
 
 const ClubContainer = styled.main`
-  padding: 96px 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -204,7 +210,27 @@ const ClubInfoBtn = styled.button`
 `;
 
 const ClubTitleBox = styled.div`
-  background-color: #dddddd;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
+  position: relative;
+`;
+
+const ClubTitle = styled.h2`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+`;
+
+const ClubContainerTitleBox = styled.div`
+  text-align: left;
+  width: 100%;
+  border-top: 2px solid black;
+`;
+
+const ClubContainerTitle = styled.h1`
+  text-align: center;
+  font-size: 64px;
+  font-weight: 600;
+  display: flex;
+  padding: 20px 0;
 `;

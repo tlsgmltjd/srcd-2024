@@ -39,7 +39,7 @@ const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 200px;
+  padding: 90px 200px 30px 200px;
   width: 100%;
 `;
 
