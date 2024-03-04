@@ -41,6 +41,10 @@ const FooterContainer = styled.footer`
   align-items: center;
   padding: 90px 200px 30px 200px;
   width: 100%;
+
+  @media screen and (max-width: 1350px) {
+    padding: 90px 50px 30px 50px;
+  }
 `;
 
 const FooterInfoBox = styled.div`

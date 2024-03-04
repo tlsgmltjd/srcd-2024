@@ -147,6 +147,10 @@ export default Clubs;
 
 const Container = styled.div`
   padding: 60px 200px 100px 200px;
+
+  @media screen and (max-width: 1350px) {
+    padding: 60px 50px 100px 50px;
+  }
 `;
 
 const ClubContainer = styled.main`
@@ -154,6 +158,10 @@ const ClubContainer = styled.main`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 76px 55px;
+
+  @media screen and (max-width: 1350px) {
+    gap: 76px 30px;
+  }
 `;
 
 const ClubBox = styled.div`
