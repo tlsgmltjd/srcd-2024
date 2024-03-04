@@ -231,6 +231,7 @@ const ClubContainerTitle = styled.h1`
   text-align: center;
   font-size: 64px;
   font-weight: 600;
+  font-style: normal;
   display: flex;
   padding: 20px 0;
 `;
