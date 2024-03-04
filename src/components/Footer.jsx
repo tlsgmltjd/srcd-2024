@@ -40,6 +40,7 @@ const FooterContainer = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
+  width: 100%;
 `;
 
 const FooterInfoBox = styled.div`
