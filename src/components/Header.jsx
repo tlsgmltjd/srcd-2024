@@ -31,11 +31,13 @@ function Header() {
 export default Header;
 
 const HeaderContainer = styled.header`
+  background-color: white;
+  position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px 0;
+  padding: 16px 200px 16px 200px;
 `;
 
 const HeaderTitle = styled.h1``;
