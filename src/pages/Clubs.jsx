@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import LeftArrowIconBlack from "../assets/LeftArrowIconBlack";
 
-import Vfriends from "../assets/clubs/Vfriends.png";
-import Mir from "../assets/clubs/Mir.png";
-import Aune from "../assets/clubs/Aune.png";
-import Tate from "../assets/clubs/Tate.png";
-import Creal from "../assets/clubs/Creal.png";
-import Tapie from "../assets/clubs/Tapie.png";
-import Januri from "../assets/clubs/Januri.png";
+import Vfriends from "../assets/clubs/Vfriends.svg";
+import Mir from "../assets/clubs/Mir.svg";
+import Aune from "../assets/clubs/Aune.svg";
+import Tate from "../assets/clubs/Tate.svg";
+import Creal from "../assets/clubs/Creal.svg";
+import Tapie from "../assets/clubs/Tapie.svg";
+import Januri from "../assets/clubs/Januri.svg";
+
 
 function Clubs() {
   return (
@@ -128,7 +129,7 @@ function Clubs() {
           <ClubConentBox>
             <ClubContentTitleBox>
               <ClubContentTitle>자의누리</ClubContentTitle>
-              <ClubContent>모션그래픽 전문</ClubContent>
+              <ClubContent>모션그래픽 전문 동아리</ClubContent>
             </ClubContentTitleBox>
             <ClubContent>콘텐츠디자인과</ClubContent>
           </ClubConentBox>
@@ -145,8 +146,12 @@ function Clubs() {
 
 export default Clubs;
 
+
+const ClubImage = styled.image`
+  width: 122px;
+`
 const Container = styled.div`
-  padding: 60px 200px 100px 200px;
+  padding: 150px 200px 150px 200px;
 
   @media screen and (max-width: 1350px) {
     padding: 60px 50px 100px 50px;
@@ -170,9 +175,8 @@ const ClubBox = styled.div`
 
 const ClubLogoBox = styled.div`
   background: #f9f9f9;
-  padding: 50px;
   width: 100%;
-  height: 357.647px;
+  height: 244.263px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,22 +197,27 @@ const ClubContentTitleBox = styled.div`
 
 const ClubContentTitle = styled.h1`
   color: #000;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
+`;
+const ClubContentTitle2 = styled.h1`
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
 `;
 
 const ClubContent = styled.p`
   color: #a0a19e;
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
 `;
 
 const ClubBottomBox = styled.div`
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   display: flex;
   justify-content: end;
-  padding: 15px 0;
+  padding: 13px 0;
 `;
 
 const ClubInfoBtn = styled.button`
@@ -223,23 +232,27 @@ const ClubTitleBox = styled.div`
   position: relative;
 `;
 
-const ClubTitle = styled.h2`
+const ClubTitle = styled.text`
   position: absolute;
   bottom: 0;
+  z-index: -1;
   left: 0;
+  font-size: 16px;
+  font-weight: 500;
 `;
 
 const ClubContainerTitleBox = styled.div`
   text-align: left;
   width: 100%;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
 `;
 
 const ClubContainerTitle = styled.h1`
   text-align: center;
-  font-size: 64px;
+  font-size: 35px;
   font-weight: 600;
   font-style: normal;
   display: flex;
   padding: 20px 0;
+  font-family: Pretendard-Semibold;
 `;
