@@ -1,5 +1,6 @@
+
 function Faq() {
-  return <>faq</>;
+  return <>Faq</>;
 }
 
 export default Faq;
